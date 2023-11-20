@@ -12,6 +12,9 @@
     amend = append
     append = commit --amend --no-edit
 
+    commit-nv = commit --no-verify
+    push-nv = push --no-verify
+
     lg = lg1
     lg1 = lg-only --all
     lg2 = lg2-only --all
