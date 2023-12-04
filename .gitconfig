@@ -28,9 +28,9 @@
     lg2-tags = lg2-only --branches --tags --simplify-by-decoration
     lg3-tags = lg3-only --branches --tags --simplify-by-decoration
 
-    lg-local = lg-only --decorate-refs-exclude=refs/remotes --decorate-refs-exclude=refs/stash --all
-    lg2-local = lg2-only --decorate-refs-exclude=refs/remotes --decorate-refs-exclude=refs/stash --all
-    lg3-local = lg3-only --decorate-refs-exclude=refs/remotes --decorate-refs-exclude=refs/stash --all
+    lg-local = lg-only --branches
+    lg2-local = lg2-only --branches
+    lg3-local = lg3-only --branches
 
     lg-only = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
     lg2-only = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
