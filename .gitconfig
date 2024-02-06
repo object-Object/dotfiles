@@ -1,37 +1,35 @@
 [core]
-	safecrlf = false
-	editor = code --wait
-	longpaths = true
+    safecrlf = false
+    editor = code --wait
+    longpaths = true
 [pull]
-	ff = only
+    ff = only
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
 [rerere]
-	enabled = true
+    enabled = true
 [alias]
-    amend = append
-    append = commit --amend --no-edit
+    amend = commit --amend --no-edit
 
     commit-nv = commit --no-verify
     push-nv = push --no-verify
 
-    lg = lg1
-    lg1 = lg-only --all
+    lg  = lg-only  --all
     lg2 = lg2-only --all
     lg3 = lg3-only --all
 
-    lg-here = lg-only
-    lg2-here = lg2-only
-    lg3-here = lg3-only
+    lg-merge  = lg  --first-parent
+    lg2-merge = lg2 --first-parent
+    lg3-merge = lg3 --first-parent
 
-    lg-tags = lg-only --branches --tags --simplify-by-decoration
+    lg-tags  = lg-only  --branches --tags --simplify-by-decoration
     lg2-tags = lg2-only --branches --tags --simplify-by-decoration
     lg3-tags = lg3-only --branches --tags --simplify-by-decoration
 
-    lg-local = lg-only --branches
-    lg2-local = lg2-only --branches
-    lg3-local = lg3-only --branches
+    lg-here  = lg-only
+    lg2-here = lg2-only
+    lg3-here = lg3-only
 
-    lg-only = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+    lg-only  = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
     lg2-only = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
     lg3-only = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
