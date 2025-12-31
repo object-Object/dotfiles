@@ -14,9 +14,9 @@
     commit-nv = commit --no-verify
     push-nv = push --no-verify
 
-    force-push = push --force-with-lease
-    push-force = force-push
-    fp = force-push
+    push-force = push --force-with-lease
+    push-f = push-force
+    pushf = push-force
 
     lg  = lg-only  --all
     lg2 = lg2-only --all
