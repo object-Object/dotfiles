@@ -14,7 +14,7 @@
     commit-nv = commit --no-verify
     push-nv = push --no-verify
 
-    push-force = push --force-with-lease
+    push-force = push --force-with-lease --force-if-includes
     push-f = push-force
     pushf = push-force
 
